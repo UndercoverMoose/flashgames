@@ -1,0 +1,87 @@
+* {
+  font-family: Arial;
+}
+body{
+  margin: auto;
+  scroll-behavior: smooth;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+#sidebar {
+  width: 400px;
+  height: auto;
+  position: absolute;
+  line-height: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#out {
+  text-align: left;
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: gray;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#out::-webkit-scrollbar {
+  width: 0;
+}
+#out span {
+  text-align:center;
+  margin-left: calc(25% + 10px);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+span {
+  font-size: 20px;
+}
+#adjust {
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+button, input {
+  width: 7%;
+  height: 30px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: white;
+  text-align: center;
+}
+#notes {
+  color: red;
+  font-size: 15px;
+}
+input[type="range"] {
+  z-index:1000;
+  margin: auto;
+  -webkit-appearance: none;
+  bottom: 50%;
+  position: fixed;
+  overflow: hidden;
+  height:20px;
+  width: 700px;
+  cursor: pointer;
+  border-radius: 0;
+  transform: rotate(270deg);
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #eee;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  background: dodgerblue;
+  box-shadow: -100vw 0 0 100vw dodgerblue;
+}
